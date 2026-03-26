@@ -9,7 +9,7 @@ const _layout = () => {
     <Tabs
       screenOptions={{
         headerShown: false,
-        tabBarActiveTintColor: "#6200ee",
+        tabBarActiveTintColor: "#002896",
         tabBarInactiveTintColor: "gray",
       }}
     >
@@ -25,7 +25,7 @@ const _layout = () => {
         }}
       />
       <Tabs.Screen
-        name="historyMyth"
+        name="(history)"
         options={{
           title: "Classics",
           tabBarLabel: "Classics",
