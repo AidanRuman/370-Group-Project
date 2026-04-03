@@ -20,9 +20,25 @@ const DATA: Locations[] = [
     id: 3,
     name: "The River Styx",
   },
+  {
+    id: 4,
+    name: "The Battle of Marathon",
+  },
+  {
+    id: 5,
+    name: "The Scicilian Expedition",
+  },
+  {
+    id: 6,
+    name: "The City of Carthage",
+  },
 ]
 
 const history = () => {
+
+const Seperator = () => (
+    <View style={styles.separatorStyle}/>
+);
 
   const displayLocation = ({ item }: {item: Locations}) => (
   <View style={styles.Loc}>
@@ -33,6 +49,8 @@ const history = () => {
     <FlatList
       data={DATA}
       renderItem={displayLocation}
+      ItemSeparatorComponent={Seperator}
+
     />
   )
 }
@@ -41,7 +59,11 @@ export default history
 
 const styles = StyleSheet.create({
   Loc: {
-      padding: 10,
+      padding: 15,
       backgroundColor: 'white',
-    }
+    },
+  separatorStyle: {
+    height: 1,
+    backgroundColor: 'black',
+  }
 })
