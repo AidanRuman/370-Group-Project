@@ -4,7 +4,12 @@ import React from 'react'
 const philosophy = () => {
   return (
     <View>
-      <Text>philosophy</Text>
+      <Text style={{
+        justifyContent: 'center',
+        alignContent: 'center'
+      }}>
+        philosophy
+        </Text>
     </View>
   )
 }

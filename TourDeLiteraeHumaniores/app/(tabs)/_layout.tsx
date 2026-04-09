@@ -17,7 +17,7 @@ const _layout = () => {
         name="index"
         options={{
           title: "map",
-          tabBarLabel: "Home",
+          tabBarLabel: "map",
           headerShown: false,
           tabBarIcon: ({ focused, color }) => (
             <Ionicons name={focused ? "map" : "map-outline"} size={24} color={color} />
@@ -36,7 +36,7 @@ const _layout = () => {
         }}
       />
       <Tabs.Screen
-        name="philosophy"
+        name="(philosophy)"
         options={{
           title: "philosophy",
           tabBarLabel: "Philosophy",
