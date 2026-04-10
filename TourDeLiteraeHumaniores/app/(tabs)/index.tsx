@@ -1,5 +1,6 @@
+import { useAuth } from "@/context/context";
 import React, { useRef } from "react";
-import { Text, View, StyleSheet, Pressable } from "react-native";
+import { Text, View, StyleSheet, Pressable, Button } from "react-native";
 import MapView, { Callout, Marker, PROVIDER_GOOGLE } from "react-native-maps";
 
 const CENTER_MAP = {
@@ -69,6 +70,9 @@ export default function Index() {
       //43.7700° N, 11.2577° E
     },
   ];
+
+  const {logout} = useAuth()
+
   const mapRef = useRef<MapView>(null);
 
   const fitAllLocations = () => {
@@ -121,6 +125,11 @@ export default function Index() {
       <Pressable style={styles.recenterButton} onPress={recenterOnGreece}>
         <Text>Recenter Map</Text>
       </Pressable>
+
+      <Pressable style={styles.logoutButton} onPress={logout}>
+        <Text>Logout</Text>
+      </Pressable>
+
     </View>
   );
 }
@@ -150,4 +159,12 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 10,
   },
+  logoutButton: {
+    position: "absolute",
+    bottom: 20,
+    left: 20,
+    backgroundColor: "white",
+    padding: 10,
+    borderRadius: 10,
+  }
 });
