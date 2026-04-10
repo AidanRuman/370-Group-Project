@@ -1,38 +1,9 @@
-import { FlatList, StyleSheet, Text, View } from 'react-native'
+import { FlatList, StyleSheet, Text, View, Pressable } from 'react-native'
 import React from 'react'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
-
-interface Locations {
-  id: number;
-  name: string;
-}
-
-const DATA: Locations[] = [
-  {
-    id: 1,
-    name: "The Colchis, the land of the Golden Fleece and Medea",
-  },
-  {
-    id: 2,
-    name: "The Temple of Delphi",
-  },
-  {
-    id: 3,
-    name: "The River Styx",
-  },
-  {
-    id: 4,
-    name: "The Battle of Marathon",
-  },
-  {
-    id: 5,
-    name: "The Scicilian Expedition",
-  },
-  {
-    id: 6,
-    name: "The City of Carthage",
-  },
-]
+import { Stack } from 'expo-router';
+import * as WebBrowser from 'expo-web-browser';
+import { locations_for_use, Locations } from '@/data/locations';
 
 const history = () => {
 
@@ -41,13 +12,14 @@ const Seperator = () => (
 );
 
   const displayLocation = ({ item }: {item: Locations}) => (
-  <View style={styles.Loc}>
+  <Pressable style={styles.Loc} onPress={
+    () => {}}>
     <Text>{item.name}</Text>
-  </View>
+  </Pressable>
 )
   return (
     <FlatList
-      data={DATA}
+      data={locations_for_use}
       renderItem={displayLocation}
       ItemSeparatorComponent={Seperator}
 
