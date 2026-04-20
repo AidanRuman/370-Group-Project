@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const aristotle = () => {
+const quoteDay = () => {
   return (
     <View>
-      <Text>aristotle</Text>
+      <Text>quoteDay</Text>
     </View>
   )
 }
 
-export default aristotle
+export default quoteDay
 
 const styles = StyleSheet.create({})

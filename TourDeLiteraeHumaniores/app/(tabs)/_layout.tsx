@@ -36,7 +36,7 @@ const _layout = () => {
         }}
       />
       <Tabs.Screen
-        name="(philosophy)"
+        name="philosophy"
         options={{
           title: "philosophy",
           tabBarLabel: "Philosophy",
@@ -45,6 +45,17 @@ const _layout = () => {
             <Ionicons name={focused ? "person" : "person-outline"} size={24} color={color} />
           ),
         }}
+      />
+      <Tabs.Screen 
+      name='quoteDay'
+      options={{
+        title: "quote",
+        tabBarLabel: "Quote of the Day",
+        headerShown: false,
+        tabBarIcon: ({ focused, color }) => (
+            <Ionicons name={focused ? "calendar-number" : "calendar-number-outline"} size={24} color={color} />
+          )
+      }}
       />
     </Tabs>
   )
