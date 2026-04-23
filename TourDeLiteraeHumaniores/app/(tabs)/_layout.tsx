@@ -36,7 +36,7 @@ const _layout = () => {
         }}
       />
       <Tabs.Screen
-        name="philosophy"
+        name="(philosophy)"
         options={{
           title: "philosophy",
           tabBarLabel: "Philosophy",

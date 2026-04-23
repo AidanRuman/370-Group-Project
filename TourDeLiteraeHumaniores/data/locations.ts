@@ -92,4 +92,54 @@ export const locations_for_use: Locations[] = [
     blurb:
       "The Teutoburg Forest is the location of a major battle in Roman history, where in 9 CE, three Roman legions, betweem 15-20,000 soldiers, were ambushed by Germanic tribes. The battle was a devastating loss for the Romans, with nearly the entire force being wiped out. The defeat halted Roman expansion into Germania and lead to a more defensive position along the Rhine River and is considered one of the greatest military disasters in Roman history.",
   },
+  {
+    id: 11,
+    aoi: "Philosophers",
+    name: "Socarates/Plato",
+    latitude: 37.9694,
+    longitude: 23.721,
+    blurb: "Socrates and Plato are one of the most influential and studied philosophers of all time. Their influence on critical thinking and philosophy can be seen throughout society and other works by philosophers. While it is unknown which works are Socarates's thinking or Plato's thinking, it is confirmed that both existed and that Plato was the student who took notes during Socarates's classes",
+  },
+  {
+    id: 12,
+    aoi: "Philosophers",
+    name: "Aristotle",
+    latitude: 37.9694,
+    longitude: 23.721,
+    blurb: "Lived around the same time as Plato and Socarates, yet have very different view points and founded an entirly different school of thought.",
+  },
+  {
+    id: 13,
+    aoi: "Philosophers",
+    name: "machiavelli",
+    latitude: 37.9694,
+    longitude: 23.721,
+    blurb: "A promenit itailian philosopher. His most influental work, the Prince, can be seen as either a guidebook on how to rule or a critque of monarchy and the status quo, how you read it is up to you.",
+  },
+  {
+    id: 14,
+    aoi: "Philosophers",
+    name: "Cicero",
+    latitude: 37.9694,
+    longitude: 23.721,
+    blurb: "Marcus Tullius Cicero (106-43 BCE) is best known to posterity as a prominent statesman and orator in the tumultuous period of the late Roman republic. As well as being a leading political actor of his time, he also wrote voluminously.",
+  },
+  {
+    id: 15,
+    aoi: "Philosophers",
+    name: "Thomas Aquinas",
+    latitude: 37.9694,
+    longitude: 23.721,
+    blurb: "Between antiquity and modernity stands Thomas Aquinas (ca. 1225-1274). The greatest figure of thirteenth-century Europe in the two preeminent sciences of the era, philosophy and theology, he epitomizes the scholastic method of the newly founded universities.",
+  },
+  {
+    id: 16,
+    aoi: "Philosophers",
+    name: "Marcus Aurelius",
+    latitude: 37.9694,
+    longitude: 23.721,
+    blurb: "The second century CE Roman emperor Marcus Aurelius was also a Stoic philosopher, and his Meditations, written to and for himself, offers readers a unique opportunity to see how an ancient person (indeed an emperor) might try to live a Stoic life," 
+    + 
+    " according to which only virtue is good, only vice is bad, and the things about which we normally concern ourselves are all indifferent to our happiness, as our lives are not made good or bad by our having or lacking them. The difficulties Marcus faces putting Stoicism into practice are philosophical as well as practical, and understanding his efforts improves our philosophical appreciation of Stoicism.",
+  },
 ];
