@@ -3,7 +3,6 @@ import * as SQLite from "expo-sqlite";
 // ─── Interfaces ───────────────────────────────────────────────────────────────
 
 export interface HistoricalEvent {
-  id: number;
   title: string;
   description: string;
   month: number; // 1-12
@@ -13,7 +12,7 @@ export interface HistoricalEvent {
 
 // ─── Seed Data ────────────────────────────────────────────────────────────────
 
-const SEED_EVENTS: Omit<HistoricalEvent, "id">[] = [
+const SEED_EVENTS = [
  
   // Bronze Age Greece
   { title: "Fall of Troy (Traditional)", description: "Greek forces sack Troy with the legendary wooden horse, ending the Trojan War.", month: 4, day: 24, year: -1184 },

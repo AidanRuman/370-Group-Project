@@ -57,7 +57,7 @@ export async function checkAndSendAnniversaryNotifications(): Promise<void> {
       content: {
         title: `\u{1F3DB}\uFE0F On This Day in History (${yearLabel})`,
         body: `${event.title} \u2014 ${event.description} (${yearsAgo.toLocaleString()} years ago today)`,
-        data: { eventId: event.id, eventTitle: event.title },
+        data: { eventTitle: event.title },
       },
       trigger: null, // fire immediately when the app opens
     });
