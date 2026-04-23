@@ -25,11 +25,10 @@ const Seperator = () => (
   return (
     <FlatList
       data={locations_for_use.filter(
-    (location) => location.id >= 1 && location.id <= 6
+    (location) => location.aoi === "Classics"
   )}
       renderItem={displayLocation}
       ItemSeparatorComponent={Seperator}
-
     />
   )
 }

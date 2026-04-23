@@ -1,5 +1,7 @@
 export interface Locations {
   id: number;
+  // aoi = area of interest
+  aoi: string;
   name: string;
   latitude: number;
   longitude: number;
@@ -9,13 +11,15 @@ export interface Locations {
 export const locations_for_use: Locations[] = [
   {
     id: 1,
+    aoi: "Classics",
     name: "The Colchis, the land of the Golden Fleece and Medea",
     latitude: 42.2774,
     longitude: 42.7054,
-    blurb: "In Mythology the Colchis is best known from the story of Jason and the Argonauts. During Jason’s travels, he was to retrieve the Golden Fleece from the divine ram that lived in the Colchis and guarded by a serpent. The Colchis is also home to the Greek witch Medea, who assisted Jason in his task by betraying her father. After Jason completed his task, Medea fled her homeland with him, killing her brother to ensure their getaway.",
+    blurb:"In Mythology the Colchis is best known from the story of Jason and the Argonauts. During Jason's travels, he was to retrieve the Golden Fleece from the divine ram that lived in the Colchis and guarded by a serpent. The Colchis is also home to the Greek witch Medea, who assisted Jason in his task by betraying her father. After Jason completed his task, Medea fled her homeland with him, killing her brother to ensure their getaway.",
   },
   {
     id: 2,
+    aoi: "Classics",
     name: "The Temple of Delphi",
     latitude: 38.4822,
     longitude: 22.5011,
@@ -23,6 +27,7 @@ export const locations_for_use: Locations[] = [
   },
   {
     id: 3,
+    aoi: "Classics",
     name: "The River Styx",
     latitude: 37.9837,
     longitude: 22.2025,
@@ -30,6 +35,7 @@ export const locations_for_use: Locations[] = [
   },
   {
     id: 4,
+    aoi: "Classics",
     name: "The Battle of Marathon",
     latitude: 38.118,
     longitude: 23.9783,
@@ -38,6 +44,7 @@ export const locations_for_use: Locations[] = [
   },
   {
     id: 5,
+    aoi: "Classics",
     name: "The Sicilian Expedition",
     latitude: 37.0833,
     longitude: 15.2833,
@@ -45,13 +52,16 @@ export const locations_for_use: Locations[] = [
   },
   {
     id: 6,
+    aoi: "Classics",
     name: "The City of Carthage",
     latitude: 36.8528,
     longitude: 10.3233,
     blurb: "Carthage was an ancient city located in present-day Tunisia, founded by Phoenician settlers. It grew to become a powerful maritime empire and a major rival to Rome, engaging in a series of conflicts known as the Punic Wars. Carthage was renowned for its wealth, naval prowess, and strategic location, but it ultimately fell to Rome in 146 BCE after a brutal siege, leading to the city's destruction and the end of Carthaginian civilization.",
+
   },
   {
     id: 7,
+    aoi: "Philosophy",
     name: "The Lyceum",
     latitude: 37.9711,
     longitude: 23.7394,
@@ -59,6 +69,7 @@ export const locations_for_use: Locations[] = [
   },
   {
     id: 8,
+    aoi: "Philosophy",
     name: "The Prison of Socrates",
     latitude: 37.9694,
     longitude: 23.721,
@@ -66,9 +77,19 @@ export const locations_for_use: Locations[] = [
   },
   {
     id: 9,
+    aoi: "Philosophy",
     name: "Florence, Home of Machiavelli",
     latitude: 43.77,
     longitude: 11.2577,
     blurb: "",
+  },
+  {
+    id: 10,
+    aoi: "Classics",
+    name: "Teutoburg Forest",
+    latitude: 51.9,
+    longitude: 8.8167,
+    blurb:
+      "The Teutoburg Forest is the location of a major battle in Roman history, where in 9 CE, three Roman legions, betweem 15-20,000 soldiers, were ambushed by Germanic tribes. The battle was a devastating loss for the Romans, with nearly the entire force being wiped out. The defeat halted Roman expansion into Germania and lead to a more defensive position along the Rhine River and is considered one of the greatest military disasters in Roman history.",
   },
 ];
