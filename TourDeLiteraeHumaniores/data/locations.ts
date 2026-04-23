@@ -23,7 +23,7 @@ export const locations_for_use: Locations[] = [
     name: "The Temple of Delphi",
     latitude: 38.4822,
     longitude: 22.5011,
-        blurb: "In mythology and Greek history, the Temple of Delphi was the location of the most prominent Oracle of Apollo. Headed by the Pythia, the oracle would receive Heroes and Kings asking for knowledge, and she would give them prophecies of the future. The most famous prophecy comes from Herodotus' History and was given to King Croesus of Lydia seeking to secure his reign and protect his kingdom from the Persians and the oracle stated “If you cross the Halys River, a great empire will fall.” He interpreted the oracle as the Persian empire will fall, but tragically, it was his kingdom that fell in the end.",
+    blurb: "In mythology and Greek history, the Temple of Delphi was the location of the most prominent Oracle of Apollo. Headed by the Pythia, the oracle would receive Heroes and Kings asking for knowledge, and she would give them prophecies of the future. The most famous prophecy comes from Herodotus’ History and was given to King Croesus of Lydia seeking to secure his reign and protect his kingdom from the Persians and the oracle stated “If you cross the Halys River, a great empire will fall.” He interpreted the oracle as the Persian empire will fall, but tragically, it was his kingdom that fell in the end.",
   },
   {
     id: 3,
@@ -31,8 +31,7 @@ export const locations_for_use: Locations[] = [
     name: "The River Styx",
     latitude: 37.9837,
     longitude: 22.2025,
-    blurb:
-      "One of the five rivers to the underworld, and the most famous, is the River Styx. Also known as the river of Hate, it separates the living from the dead, and the Gods swear binding oath upon its water. The goddess of the river, known by the same name, Styx, is a daughter of the Titans and sided with the Olympians in the war her parents generation, and because of this Zeus honored her by allowing the oaths of the gods to be sworn by her water. The most prominent myth involving the river comes from Statius' Achilleid, which involves the Greek hero Achilles and his mother. In the story Achilles is taken to the river by his mother as an infant, and is dipped into the river in attempts to make him immortal, however, being held by her thumb and forefinger, his heel remained vulnerable.",
+    blurb: "One of the five rivers to the underworld, and the most famous, is the River Styx. Also known as the river of Hate, it separates the living from the dead, and the Gods swear binding oath upon its water. The goddess of the river, known by the same name, Styx, is a daughter of the Titans and sided with the Olympians in the war her parents generation, and because of this Zeus honored her by allowing the oaths of the gods to be sworn by her water. The most prominent myth involving the river comes from Statius' Achilleid, which involves the Greek hero Achilles and his mother. In the story Achilles is taken to the river by his mother as an infant, and is dipped into the river in attempts to make him immortal, however, being held by her thumb and forefinger, his heel remained vulnerable.",
   },
   {
     id: 4,
@@ -40,7 +39,8 @@ export const locations_for_use: Locations[] = [
     name: "The Battle of Marathon",
     latitude: 38.118,
     longitude: 23.9783,
-    blurb: "The Battle of Marathon was fought in 490 BCE between the Athenians and the Persians during the First Persian War. The Athenians employed a strategic formation that allowed them to outflank the larger Persian army and despite being outnumbered, the Athenians achieved a decisive victory, with only 192 dead on the Athenian side and 6,400 on the Persian side, marking a significant turning point in the War. The battle is famously associated with the legend of Pheidippides, who is said to have run from Marathon to Athens to deliver news of the victory, inspiring the modern marathon.",
+    blurb:
+      "The Battle of Marathon was fought in 490 BCE between the Athenians and the Persians during the First Persian War. The Athenians employed a strategic formation that allowed them to outflank the larger Persian army and despite being outnumbered, the Athenians achieved a decisive victory, with only 192 dead on the Athenian side and 6,400 on the Persian side, marking a significant turning point in the War. The battle is famously associated with the legend of Pheidippides, who is said to have run from Marathon to Athens to deliver news of the victory, inspiring the modern marathon",
   },
   {
     id: 5,
@@ -48,8 +48,7 @@ export const locations_for_use: Locations[] = [
     name: "The Sicilian Expedition",
     latitude: 37.0833,
     longitude: 15.2833,
-      blurb: "The Sicilian Expedition was a disastrous Athenian military campaign during the Peloponnesian War, launched in 415 BCE with the aim of conquering the city-state of Syracuse. The expedition ended in a catastrophic defeat for Athens, with the entire Athenian fleet destroyed and thousands of soldiers killed or captured, marking a significant turning point in the war and contributing to Athens' eventual downfall.",
-
+    blurb: "The Sicilian Expedition was a disastrous Athenian military campaign during the Peloponnesian War, launched in 415 BCE with the aim of conquering the city-state of Syracuse. The expedition ended in a catastrophic defeat for Athens, with the entire Athenian fleet destroyed and thousands of soldiers killed or captured, marking a significant turning point in the war and contributing to Athens' eventual downfall.",
   },
   {
     id: 6,
