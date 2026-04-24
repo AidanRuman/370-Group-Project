@@ -1,10 +1,23 @@
 import { FlatList, StyleSheet, Text, View, Pressable, ScrollView } from 'react-native'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { locations_for_use, Locations, people_for_use, People  } from '@/data/data';
+import { useLocalSearchParams } from 'expo-router';
 
 const philosophy = () => {
+  const { locationId } = useLocalSearchParams<{ locationId?: string }>();
   const [selectedLocationId, setSelectedLocationId] = useState<number | null>(null);
   const [selectedPersonId, setSelectedPersonId] = useState<number | null>(null);
+
+  useEffect(() => {
+    if (!locationId) {
+      return;
+    }
+
+    const parsedLocationId = Number(locationId);
+    if (!Number.isNaN(parsedLocationId)) {
+      setSelectedLocationId(parsedLocationId);
+    }
+  }, [locationId]);
 
 const Seperator = () => (
     <View style={styles.separatorStyle}/>
@@ -12,7 +25,7 @@ const Seperator = () => (
 
   const displayLocation = ({ item }: {item: Locations}) => (
   <Pressable
-    style={styles.Loc}
+      style={[styles.Loc, selectedLocationId === item.id && styles.selectedLoc]}
     onPress={() =>
       setSelectedLocationId((current) => (current === item.id ? null : item.id))
     }
@@ -77,6 +90,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#E3F2FD', 
     borderBottomWidth: 1,
     borderBottomColor: '#42A5F5', 
+  },
+  selectedLoc: {
+    backgroundColor: '#BBDEFB',
   },
   separatorStyle: {
     height: 1,
