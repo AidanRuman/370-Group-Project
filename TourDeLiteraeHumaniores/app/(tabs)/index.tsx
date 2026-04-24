@@ -2,7 +2,7 @@ import { useAuth } from "@/context/context";
 import React, { useRef } from "react";
 import { Text, View, StyleSheet, Pressable, Button } from "react-native";
 import MapView, { Callout, Marker, PROVIDER_GOOGLE } from "react-native-maps";
-import { locations_for_use, Locations } from "@/data/locations";
+import { locations_for_use, Locations } from "@/data/data";
 
 const CENTER_MAP = {
   latitude: 37.15727,
@@ -29,7 +29,6 @@ export default function Index() {
       },
     );
   };
-
 
   const recenterOnGreece = () => {
     mapRef.current?.animateToRegion(CENTER_MAP, 300);
@@ -110,3 +109,4 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   }
 });
+
