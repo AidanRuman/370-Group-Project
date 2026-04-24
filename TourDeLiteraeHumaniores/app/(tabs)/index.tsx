@@ -1,8 +1,9 @@
 import { useAuth } from "@/context/context";
 import React, { useRef } from "react";
-import { Text, View, StyleSheet, Pressable, Button } from "react-native";
+import { Text, View, StyleSheet, Pressable } from "react-native";
 import MapView, { Callout, Marker, PROVIDER_GOOGLE } from "react-native-maps";
-import { locations_for_use, Locations } from "@/data/data";
+import { locations_for_use } from "@/data/data";
+import { useRouter } from "expo-router";
 
 const CENTER_MAP = {
   latitude: 37.15727,
@@ -14,6 +15,7 @@ const CENTER_MAP = {
 export default function Index() {
 
   const {logout} = useAuth()
+  const router = useRouter();
 
   const mapRef = useRef<MapView>(null);
 
@@ -34,6 +36,23 @@ export default function Index() {
     mapRef.current?.animateToRegion(CENTER_MAP, 300);
   };
 
+  const openLocationInList = (locationId: number, aoi: string) => {
+    if (aoi === "Classics") {
+      router.push({
+        pathname: "/(tabs)/(history)/[locationId]",
+        params: { locationId: String(locationId) },
+      });
+      return;
+    }
+
+    if (aoi === "Philosophy") {
+      router.push({
+        pathname: "/(tabs)/(philosophy)/[locationId]",
+        params: { locationId: String(locationId) },
+      });
+    }
+  };
+
   return (
     <View style={styles.container}>
       <MapView
@@ -50,9 +69,13 @@ export default function Index() {
               longitude: location.longitude,
             }}
           >
-            <Callout tooltip={true}>
+            <Callout
+              tooltip={true}
+              onPress={() => openLocationInList(location.id, location.aoi)}
+            >
               <View style={styles.Callout}>
-                <Text>{location.name}</Text>
+                <Text style={styles.calloutTitle}>{location.name}</Text>
+                <Text style={styles.calloutHint}>Tap to open in list</Text>
               </View>
             </Callout>
           </Marker>
@@ -83,6 +106,14 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     padding: 10,
     borderRadius: 10,
+  },
+  calloutTitle: {
+    fontWeight: "600",
+  },
+  calloutHint: {
+    marginTop: 4,
+    color: "#475569",
+    fontSize: 12,
   },
   button: {
     position: "absolute",

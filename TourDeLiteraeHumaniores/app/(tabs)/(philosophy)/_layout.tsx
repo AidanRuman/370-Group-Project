@@ -7,6 +7,7 @@ const _layout = () => {
   return (
      <Stack>
         <Stack.Screen name='philosophy'/>
+        <Stack.Screen name='[locationId]' options={{ title: 'Philosophy Location' }} />
      </Stack>
   )
 }
