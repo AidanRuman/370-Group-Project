@@ -10,14 +10,14 @@ export default function loginScreen() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>This is the login screen</Text>
+      <Text style={styles.title}>Tour De Literae Humaniores</Text>
       <TextInput
         placeholder="Enter a Username"
         value={token}
         onChangeText={setToken}
       />
       <Pressable style={styles.button} onPress={() => (isAuth ? logout() : login(token))}>
-        <Text style={styles.buttonText}>Change Login Status</Text>
+        <Text style={styles.buttonText}>Login</Text>
       </Pressable>
       <Link href="/" dismissTo style={styles.button}>
         <Text style={styles.buttonText}>Go to home screen</Text>
@@ -42,9 +42,11 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: "bold",
     paddingBottom: 15,
+    marginBottom: 20,
+    fontFamily: "Georgia",
   },
   enterUsername: {
-      marginBottom: 50,
+      padding: 50,
   },
   button: {
     marginTop: 15,
